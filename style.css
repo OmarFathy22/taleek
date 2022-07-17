@@ -1,0 +1,121 @@
+  /*==============
+  Glabal elements
+  ================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family:sans-serif;
+
+  
+
+}
+.cover{
+    background-image:url(buis-2.svg);
+    background-size: cover;
+    background-color: brown;
+    
+}
+ 
+
+/*==============
+       Header
+  ================*/
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+  
+}
+
+
+.logo{width:fit-content; position:relative;   margin-left: 30px;
+}
+nav{width: fit-content;
+   margin-right: 50px;
+    direction: rtl;
+    padding-top: 35px;
+}
+.logo p{
+    display: inline-block;
+     position: absolute;
+     bottom: 35px;
+     font-size: 20px;
+     font-weight: 600;
+}
+a{
+ text-decoration: none;
+ margin: 8px;
+ opacity: 0.5;
+ font-size: 20px;
+}
+a:hover{opacity: 1;}
+.active{opacity: 1;}
+ /*==============
+       middle
+       
+  ================*/
+.middle{
+height: 300px;
+position: relative;
+}
+.middle h1{
+    text-align: center;
+    font-size: 70px;
+    animation:taleekmove 7s infinite linear ;
+}
+.middle .main-img{
+    display: block;
+    margin: 0 auto;
+    height: 300px;
+}
+.left{
+    width: fit-content;
+  position: absolute;
+  top:40%;
+  left: 15%;
+  
+
+}
+.left .store-img{
+    width: 200px;
+    display: block;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    padding:10px;
+
+    
+}
+.left .app{background-color: brown;
+box-shadow: 5px 5px 20px rgb(212, 108, 108);}
+.left .play{background-color: rgb(3, 20, 71);
+    box-shadow: 5px 5px 20px rgb(212, 108, 108);}
+.left .store-img:hover{
+    background-image: linear-gradient(to right,yellow,rgb(178, 196, 15));
+    cursor: pointer;
+   
+}
+
+@media (max-width:2050px) {
+    .left{
+        position: static;
+        margin: 0 auto;
+    }
+    .left .store-img{
+        display: inline;
+        margin-right: 10px;
+    }
+    
+}
+ /*==============
+        Wave
+  ================*/
+.wave{
+height: 205px;
+}
+@keyframes taleekmove {
+    0%,100%{letter-spacing: 5px;}
+    50%{letter-spacing: 15px;}
+    
+}
